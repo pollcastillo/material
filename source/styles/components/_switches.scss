@@ -21,6 +21,8 @@ input[type="checkbox"][switch] {
   /* Cursor */
   cursor: pointer;
 
+  transition: .3s all ease-in-out;
+
   // ! change this comment
   // IF OTHER ELEMENT IS SIDE PUT A SPACE
   & + * {
@@ -49,14 +51,31 @@ input[type="checkbox"][switch] {
     background-color: $primary;
     border-radius: 100px;
 
-    transition: .3s all ease;
-    
+    transition: inherit;
+  }
+
+  &:hover {
+    &::after {
+      height: 24px;
+      width: 24px;
+      right: 22px;
+    }
   }
 
   /* change background when switch is activated */
   &:checked {
     background-color: $primary;
     font-size: 16px;
+
+    &::after {
+      background-color: $on-primary;
+      color: $primary;
+      height: 24px;
+      width: 24px;
+      right: 2px;
+
+      transition: inherit;
+    }
   }
 
 }
