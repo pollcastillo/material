@@ -1,9 +1,20 @@
+@use (sass:map);
+
+$color-primary: {
+  $primary-0: #000000,
+  $primary-10: #171E00,
+}
+
 $primary: #44692B;
 $on-primary: #FFFFFF;
-$primary-container: #C3F1A1;
-$on-primary-container: #0C2004;
+$primary-container: #D5ED7E;
+$on-primary-container: #171E00;
+
 
 $secondary: #57614E;
 $on-secondary: #FFFFFF;
 $secondary-container: #DCE6CD;
 $on-secondary-container: #161F0F;
+
+$background: #FEFCF3;
+$on-background: #1B1C17;

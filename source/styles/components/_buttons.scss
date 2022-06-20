@@ -1,0 +1,24 @@
+.btn {
+  appearance: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto Flex';
+  height: 40px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  & + * {
+    margin-right: 24px;
+  }
+
+  &__primary {
+    background-color: $primary;
+    color: $on-primary;
+  }
+
+  &__secondary {
+    background-color: $secondary;
+    color: $on-secondary;
+  }
+
+}

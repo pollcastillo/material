@@ -5,4 +5,9 @@
   width: 100%;
   max-width: 1024px;
   margin: auto;
+
+  &[primary] {
+    background-color: $primary-container;
+    border-radius: 24px;
+  }
 }
