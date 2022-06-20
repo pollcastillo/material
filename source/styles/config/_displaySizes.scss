@@ -1,0 +1,113 @@
+body {
+  &[display-type="large"] {
+    h1, .display {
+      font-size: $display-large;
+      line-height: $display-large-leader;
+      letter-spacing: $display-large-tracking;
+      font-variation-settings: 'opsz' 48;
+    }
+  
+    h2, .headline {
+      font-size: $headline-large;
+      line-height: $headline-large-leader;
+      letter-spacing: $headline-large-tracking;
+      font-variation-settings: 'opsz' 48;
+    }
+  
+    h3, .title {
+      font-size: $title-large;
+      line-height: $title-large-leader;
+      letter-spacing: $title-large-tracking;
+      font-variation-settings: 'opsz' 48;
+    }
+  
+    p, .body {
+      font-size: $body-large;
+      line-height: $body-large-leader;
+      letter-spacing: $body-large-tracking;
+      font-variation-settings: 'opsz' 16;
+    }
+  
+    label, .label {
+      font-size: $label-large;
+      font-weight: $label-large-weight;
+      line-height: $label-large;
+      letter-spacing: $label-large-tracking;
+      font-variation-settings: 'opsz' 16;
+    }
+  }
+  
+  &[display-type="medium"] {
+    h1, .display {
+      font-size: $display-medium;
+      line-height: $display-medium-leader;
+      letter-spacing: $display-medium-tracking;
+      font-variation-settings: 'opsz' 48;
+    }
+  
+    h2, .headline {
+      font-size: $headline-large;
+      line-height: $headline-large-leader;
+      letter-spacing: $headline-large-tracking;
+      font-variation-settings: 'opsz' 48;
+    }
+  
+    h3, .title {
+      font-size: $title-medium;
+      line-height: $title-medium-leader;
+      letter-spacing: $title-medium-tracking;
+      font-variation-settings: 'opsz' 48;
+    }
+  
+    p, .body {
+      font-size: $body-medium;
+      line-height: $body-medium-leader;
+      letter-spacing: $body-medium-tracking;
+      font-variation-settings: 'opsz' 16;
+    }
+  
+    label, .label {
+      font-size: $label-medium;
+      font-weight: $label-medium-weight;
+      line-height: $label-medium;
+      letter-spacing: $label-medium-tracking;
+      font-variation-settings: 'opsz' 16;
+    }
+  }
+  
+  &[display-type="small"] {
+    h1, .display {
+      font-size: $display-medium;
+      line-height: $display-medium-leader;
+      letter-spacing: $display-medium-tracking;
+    }
+  
+    h2, .headline {
+      font-size: $headline-large;
+      line-height: $headline-large-leader;
+      letter-spacing: $headline-large-tracking;
+    }
+  
+    h3, .title {
+      font-size: $title-small;
+      line-height: $title-small-leader;
+      letter-spacing: $title-small-tracking;
+      font-weight: bold;
+    }
+  
+    p, .body {
+      font-size: $body-small;
+      line-height: $body-small-leader;
+      letter-spacing: $body-small-tracking;
+      font-variation-settings: 'opsz' 16;
+    }
+  
+    label, .label {
+      font-size: $label-small;
+      font-weight: $label-small-weight;
+      line-height: $label-small;
+      letter-spacing: $label-small-tracking;
+      font-variation-settings: 'opsz' 16;
+    }
+  }
+}

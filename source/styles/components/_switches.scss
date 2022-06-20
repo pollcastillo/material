@@ -1,0 +1,62 @@
+input[type="checkbox"][switch] {
+  font-family: 'material-rounded';
+  font-size: 0;
+  color: #FFF;
+
+  /* Remove default style */
+  appearance: none;
+
+  /* Add basic form and size */
+  display: inline-block;
+  position: relative;
+  height: 32px;
+  width: 52px;
+  
+  /* add background and borders */
+  background-color: $on-primary;
+  border: 2px solid;
+  border-color: $primary;
+  border-radius: 100px;
+
+  /* Cursor */
+  cursor: pointer;
+
+  // ! change this comment
+  // IF OTHER ELEMENT IS SIDE PUT A SPACE
+  & + * {
+    margin-left: 16px;
+  }
+
+  /* thumb */
+  &::after {
+    content: "check";
+
+    font-size: inherit;
+
+    /* Add basic form and size */
+    display: flex;
+    /* alignment */
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    /* thumb size */
+    height: 16px;
+    width: 16px;
+    background-color: $primary;
+    border-radius: 100px;
+
+    transition: .3s all ease;
+    
+  }
+
+  /* change background when switch is activated */
+  &:checked {
+    background-color: $primary;
+    font-size: 16px;
+  }
+
+}
