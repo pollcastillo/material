@@ -1,13 +1,55 @@
+
+@use 'sass:map';
+
 .container {
   display: block;
   padding: 24px;
 
   width: 100%;
   max-width: 1024px;
-  margin: auto;
+  margin: 16px auto;
+
+  position: relative;
 
   &[primary] {
     background-color: $primary-container;
+    color: $on-primary-container;
     border-radius: 24px;
+
+    $btn-bg-color: map.get($color-primary, "_40");
+    $btn-label-color: map.get($color-primary, "_100");
+    
+    .btn__primary {
+      background-color: $btn-bg-color;
+      color: $btn-label-color;
+    }
+  }
+
+  &[secondary] {
+    background-color: $secondary-container;
+    color: $on-secondary-container;
+    border-radius: 24px;
+
+    $btn-bg-color: $secondary;
+    $btn-label-color: $on-secondary;
+    
+    .btn__primary {
+      background-color: $btn-bg-color;
+      color: $btn-label-color;
+    }
+  }
+
+  &[tertiary] {
+    background-color: $tertiary-container;
+    color: $on-tertiary-container;
+    border-radius: 24px;
+    
+    $btn-bg-color: map.get($color-tertiary, "_40");
+    $btn-label-color: map.get($color-tertiary, "_100");
+
+    .btn__primary {
+      background-color: $btn-bg-color;
+      color: $btn-label-color;
+    }
   }
 }

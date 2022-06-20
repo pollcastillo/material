@@ -1,20 +1,69 @@
-@use (sass:map);
+@use "sass:map";
 
-$color-primary: {
-  $primary-0: #000000,
-  $primary-10: #171E00,
-}
+$color-primary: (
+  "_00": #000000,
+  "_10": #171E00,
+  "_20": #293500,
+  "_30": #3D4D00,
+  "_40": #536500,
+  "_50": #6B7F1C,
+  "_60": #849935,
+  "_70": #9FB54D,
+  "_80": #B9D065,
+  "_90": #D5ED7E,
+  "_95": #E3FC8A,
+  "_99": #FCFFDC,
+  "_100": #FFFFFF,
+);
 
-$primary: #44692B;
-$on-primary: #FFFFFF;
-$primary-container: #D5ED7E;
-$on-primary-container: #171E00;
+$color-secondary: (
+  "_00": #000000,
+  "_10": #191D08,
+  "_20": #2E331C,
+  "_30": #444930,
+  "_40": #5C6146,
+  "_50": #747A5D,
+  "_60": #8E9475,
+  "_70": #A9AE8F,
+  "_80": #C5CAA9,
+  "_90": #E0E6C3,
+  "_95": #EFF4D1,
+  "_99": #FBFFDC,
+  "_100": #FFFFFF,
+);
+
+$color-tertiary: (
+  "_00": #000000,
+  "_10": #00201A,
+  "_20": #03372F,
+  "_30": #214E46,
+  "_40": #3A665D,
+  "_50": #538076,
+  "_60": #6C998F,
+  "_70": #86B4A9,
+  "_80": #A1D0C5,
+  "_90": #BCECE0,
+  "_95": #CBFBEF,
+  "_99": #F0FFFB,
+  "_100": #FFFFFF,
+);
+
+$primary: map.get($color-primary, "_40");
+$on-primary: map.get($color-primary, "_100");
+$primary-container: map.get($color-primary, "_95");
+$on-primary-container: map.get($color-primary, "_10");
 
 
-$secondary: #57614E;
-$on-secondary: #FFFFFF;
-$secondary-container: #DCE6CD;
-$on-secondary-container: #161F0F;
+$secondary: map.get($color-secondary, "_40");
+$on-secondary: map.get($color-secondary, "_100");
+$secondary-container: map.get($color-secondary, "_95");
+$on-secondary-container: map.get($color-secondary, "_10");
+
+$tertiary: map.get($color-tertiary, "_40");
+$on-tertiary: map.get($color-tertiary, "_100");
+$tertiary-container: map.get($color-tertiary, "_95");
+$on-tertiary-container: map.get($color-tertiary, "_10");
 
 $background: #FEFCF3;
 $on-background: #1B1C17;
+

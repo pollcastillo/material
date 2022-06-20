@@ -1,0 +1,23 @@
+$color: $secondary;
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 16px;
+  font-size: 24px;
+  background-color: $color;
+  color: $on-primary;
+  border-radius: 16px;
+  position: absolute;
+  z-index: 600;
+
+  bottom: 0;
+  right: 0;
+
+  box-shadow: 0 2px 5px (rgba($color, 0.4)), 0 2px 5px -3px (rgba($color, 0.5));
+
+  cursor: pointer;
+}

@@ -11,8 +11,8 @@
 
   <link rel="stylesheet" href="./material-icon/material-icons.css">
 </head>
-<body display-type="medium">
-  <header class="container">
+<body display-type="small">
+  <header class="container" primary>
     <h1>Material Design</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsum eos possimus distinctio voluptatibus cupiditate non, suscipit obcaecati sequi nesciunt autem veniam totam iure error consequuntur laborum. Illo, ipsum dolore.</p>
   </header>
@@ -25,16 +25,41 @@
 
     <input type="checkbox" switch>
     <input type="checkbox" switch checked>
+
+    <br> 
+    <button class="btn btn__icon btn__primary">
+      <div class="btn__content">
+        <span class="icon">visibility</span>
+        Ver más
+      </div>
+    </button>
   </div>
 
-  <div class="container" primary>
+  <div class="container" tertiary>
     <h2>Buttons</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet aperiam soluta ipsum architecto, culpa sed nulla minus tempore. Sit at pariatur nihil saepe id sunt nisi sed aut molestiae placeat.</p>
     
     <br>
 
-    <input type="button" class="btn btn__primary" value="Primary">
-    <input type="button" class="btn btn__secondary" value="Primary">
+    <input type="button" class="btn btn__primary" value="Edit" text>
+    <input type="button" class="btn btn__secondary" value="Cancel">
+    <input type="button" class="btn btn__tertiary" value="hasldjhflajhlsdhjflajhsdlfjahsldkjfh">
+    <button class="btn btn__icon btn__secondary">
+      <div class="btn__content">
+        <span class="icon">bolt</span>
+        ajsdlkjfkasjñd kfjñaksjdñfkja ñsdklj
+      </div>
+    </button>
+  </div>
+
+  <div class="container" secondary>
+    <h2>Fabs</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestias totam maiores sit ratione tempore saepe, nihil animi nisi doloremque, inventore quod qui magnam maxime a est consequatur porro error.</p>
+    <br><br><br><br><br>
+
+    <div class="fab">
+      <span class="icon">edit</span>
+    </div>
   </div>
   <script src="bundle.js"></script>
 </body>
