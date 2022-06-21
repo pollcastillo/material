@@ -1,0 +1,19 @@
+.icon__button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 40px;
+  width: 100%;
+  width: 40px;
+  border-radius: 100px;
+  margin: 8px 8px;
+  line-height: 0;
+  background-color: gray;
+  color: lightgray;
+
+  &--primary {
+    background-color: $primary;
+    color: $on-primary;
+  }
+}

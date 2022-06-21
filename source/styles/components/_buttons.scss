@@ -1,3 +1,4 @@
+@use "sass:map";
 button {
   padding: 0;
   margin: 0;
@@ -15,14 +16,26 @@ button {
   padding: 0 24px;
   border: 1px solid transparent;
   border-radius: 100px;
+  margin-top: 8px;
+  transition: .3s all ease;
   
-  & {
-    margin-right: 18px;
+  & + * {
+    margin-right: 8px;
   }
 
   &__primary {
     background-color: $primary;
     color: $on-primary;
+  
+    &:hover {
+      background-color: map.get($color-primary, "_50");
+      box-shadow: 0 2px 5px rgba(black, 0.2), 0 2px 5px -2px rgba(black, 0.4);
+    }
+
+    &:active {
+      background-color: map.get($color-primary, "_60");
+      box-shadow: 0 2px 5px rgba(black, 0.2);
+    }
 
     &[outline] {
       background-color: inherit;
@@ -39,6 +52,16 @@ button {
   &__secondary {
     background-color: $secondary;
     color: $on-secondary;
+
+    &:hover {
+      background-color: map.get($color-secondary, "_50");
+      box-shadow: 0 2px 5px rgba(black, 0.2), 0 2px 5px -2px rgba(black, 0.4);
+    }
+
+    &:active {
+      background-color: map.get($color-secondary, "_60");
+      box-shadow: 0 2px 5px rgba(black, 0.2);
+    }
 
     &[outline] {
       background-color: inherit;
